@@ -124,7 +124,7 @@ const StatsSection = () => {
                     </div>
 
                     {/* Key Stats - 3 columns */}
-                    <div className="lg:col-span-3 grid grid-cols-2 lg:grid-cols-1 gap-3">
+                    <div className="lg:col-span-3 grid grid-cols-2 gap-3">
                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">

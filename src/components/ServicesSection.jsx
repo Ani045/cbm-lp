@@ -47,38 +47,35 @@ const ServicesSection = () => {
                     </p>
                 </div>
 
-                {/* Services Grid - 2 columns on mobile, 3 on desktop */}
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
+                {/* Services Grid - 1 column on mobile, 3 on desktop */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
                     {services.map((s, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 hover:shadow-lg transition-all group"
+                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 hover:shadow-lg transition-all group flex flex-row md:flex-col"
                         >
                             {/* Image */}
-                            <div className="relative  overflow-hidden">
+                            <div className="relative overflow-hidden w-28 md:w-full flex-shrink-0">
                                 <img
                                     src={s.image}
                                     alt={s.title}
-                                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                                    className="w-full h-full object-cover md:object-contain transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
 
                             {/* Content */}
-                            <div className="p-4">
-                                <h3 className="text-sm md:text-base font-bold text-slate-900 mb-2">{s.title}</h3>
-                                <p className="text-slate-600 text-xs leading-relaxed mb-3 hidden md:block">{s.desc}</p>
+                            <div className="p-3 md:p-4 flex-1">
+                                <h3 className="text-sm md:text-base font-bold text-slate-900 mb-1 md:mb-2">{s.title}</h3>
+                                <p className="text-slate-600 text-xs leading-relaxed mb-2 md:mb-3 line-clamp-2 md:line-clamp-none">{s.desc}</p>
 
-                                {/* Features - hidden on mobile */}
-                                <div className="hidden md:flex flex-wrap gap-1 mb-3">
+                                {/* Features */}
+                                <div className="flex flex-wrap gap-1">
                                     {s.features.map((feature, idx) => (
                                         <span key={idx} className="text-[10px] bg-[#6634A1]/10 text-[#6634A1] px-2 py-0.5 rounded-full font-medium">
                                             {feature}
                                         </span>
                                     ))}
                                 </div>
-
-                                {/* Link */}
-
                             </div>
                         </div>
                     ))}

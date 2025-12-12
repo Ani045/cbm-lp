@@ -47,7 +47,7 @@ const WhyChooseSection = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-16">
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
@@ -55,13 +55,13 @@ const WhyChooseSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="text-center p-8 rounded-2xl hover:bg-purple-50 transition-colors duration-300 group"
+                            className="text-center p-4 md:p-8 rounded-2xl hover:bg-purple-50 transition-colors duration-300 group"
                         >
-                            <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-[#6634A1] transition-colors duration-300">
-                                <SafeIcon icon={feature.icon} className="w-8 h-8 text-[#6634A1] group-hover:text-white transition-colors duration-300" />
+                            <div className="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-6 group-hover:bg-[#6634A1] transition-colors duration-300">
+                                <SafeIcon icon={feature.icon} className="w-6 h-6 md:w-8 md:h-8 text-[#6634A1] group-hover:text-white transition-colors duration-300" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-4">{feature.title}</h3>
-                            <p className="text-slate-600 leading-relaxed">{feature.description}</p>
+                            <h3 className="text-sm md:text-xl font-bold text-slate-900 mb-2 md:mb-4">{feature.title}</h3>
+                            <p className="text-slate-600 leading-relaxed text-xs md:text-base hidden md:block">{feature.description}</p>
                         </motion.div>
                     ))}
                 </div>

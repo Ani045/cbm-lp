@@ -2,9 +2,17 @@ import React from 'react';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiTrendingUp, FiUsers, FiDollarSign, FiClock, FiCheckCircle, FiShield, FiZap } = FiIcons;
+const { FiTrendingUp, FiUsers, FiDollarSign, FiClock, FiCheckCircle, FiShield, FiZap, FiPhone } = FiIcons;
 
 const AboutSection = () => {
+    const scrollToHeroForm = () => {
+        const heroFormName = document.getElementById('hero-form-name');
+        if (heroFormName) {
+            heroFormName.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(() => heroFormName.focus(), 500);
+        }
+    };
+
     return (
         <section id="about" className="py-16 bg-white relative overflow-hidden">
             <div className="container max-w-7xl mx-auto px-6">
@@ -31,28 +39,6 @@ const AboutSection = () => {
                             />
                             {/* Overlay gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-[#6634A1]/80 via-transparent to-transparent"></div>
-
-                            {/* Stats overlay at bottom */}
-                            {/* <div className="absolute bottom-0 left-0 right-0 p-6">
-                                <div className="grid grid-cols-4 gap-3">
-                                    <div className="text-center text-white">
-                                        <div className="text-2xl font-bold">40+</div>
-                                        <div className="text-xs opacity-90">Years</div>
-                                    </div>
-                                    <div className="text-center text-white">
-                                        <div className="text-2xl font-bold">200+</div>
-                                        <div className="text-xs opacity-90">Clinics</div>
-                                    </div>
-                                    <div className="text-center text-white">
-                                        <div className="text-2xl font-bold">99%</div>
-                                        <div className="text-xs opacity-90">Collection</div>
-                                    </div>
-                                    <div className="text-center text-white">
-                                        <div className="text-2xl font-bold">24h</div>
-                                        <div className="text-xs opacity-90">Turnaround</div>
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
 
@@ -103,10 +89,16 @@ const AboutSection = () => {
 
                         {/* CTA */}
                         <div className="mt-6 flex items-center gap-4">
-                            <button className="bg-[#6634A1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg shadow-purple-600/20">
+                            <button
+                                onClick={scrollToHeroForm}
+                                className="bg-[#6634A1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg shadow-purple-600/20"
+                            >
                                 Get Free Consultation
                             </button>
-                            <div className="text-[#6634A1] font-bold text-lg">(214) 295-5890</div>
+                            <a href="tel:+12142955890" className="flex items-center gap-2 text-[#6634A1] font-bold text-lg hover:underline">
+                                <SafeIcon icon={FiPhone} className="w-5 h-5" />
+                                (214) 295-5890
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -116,3 +108,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
