@@ -85,10 +85,10 @@ const TestimonialsSection = () => {
             <div className="container max-w-4xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-3">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-black mb-3">
                         Trusted by <span className="text-[#6634A1]">200+ Practices</span>
                     </h2>
-                    <p className="text-slate-600">What our clients say about CBM Medical Management</p>
+                    <p className="text-gray-700">What our clients say about CBM Medical Management</p>
                 </div>
 
                 {/* Testimonial Card */}
@@ -102,7 +102,7 @@ const TestimonialsSection = () => {
                         </div>
 
                         {/* Quote */}
-                        <blockquote className="text-slate-700 text-center text-base md:text-lg leading-relaxed mb-6 italic min-h-[80px]">
+                        <blockquote className="text-gray-800 text-center text-base md:text-lg leading-relaxed mb-6 italic min-h-[80px]">
                             "{current.quote}"
                         </blockquote>
 
@@ -112,8 +112,8 @@ const TestimonialsSection = () => {
                                 {current.initial}
                             </div>
                             <div className="text-left">
-                                <div className="font-bold text-slate-900 text-sm">{current.name}</div>
-                                <div className="text-slate-500 text-xs">{current.location}</div>
+                                <div className="font-bold text-black text-sm">{current.name}</div>
+                                <div className="text-gray-600 text-xs">{current.location}</div>
                             </div>
                         </div>
                     </div>

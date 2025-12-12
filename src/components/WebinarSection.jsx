@@ -28,10 +28,10 @@ const WebinarSection = () => {
             <div className="container max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-3">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-black mb-3">
                         Explore Our <span className="text-[#6634A1]">Webinar Archive</span>
                     </h2>
-                    <p className="text-slate-600 max-w-2xl mx-auto">
+                    <p className="text-gray-700 max-w-2xl mx-auto">
                         Expert-led training sessions to help you maximize practice revenue
                     </p>
                 </div>
@@ -52,8 +52,8 @@ const WebinarSection = () => {
                                 ></iframe>
                             </div>
                             <div className="p-4">
-                                <h3 className="font-bold text-slate-900 mb-2 text-sm">{webinar.title}</h3>
-                                <div className="flex items-center text-slate-500 text-xs">
+                                <h3 className="font-bold text-black mb-2 text-sm">{webinar.title}</h3>
+                                <div className="flex items-center text-gray-600 text-xs">
                                     <SafeIcon icon={FiClock} className="w-3 h-3 mr-1" />
                                     {webinar.duration}
                                 </div>

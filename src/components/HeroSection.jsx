@@ -7,7 +7,7 @@ const { FiTrendingUp, FiDollarSign, FiCheckCircle, FiClock, FiZap, FiShield, FiH
 const HeroSection = ({ isLoaded }) => {
 
     return (
-        <section className="relative pt-16 pb-8 overflow-hidden">
+        <section className="relative pt-16 mt-8 sm:mt-6 pb-8 overflow-hidden">
             <div className="container max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Main Heading */}

@@ -31,8 +31,8 @@ function App() {
       {/* Navigation */}
       <Navbar />
 
-      {/* Dynamic Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      {/* Dynamic Background - Hidden on mobile to prevent cloudy effect */}
+      <div className="hidden md:block fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-purple-100/40 rounded-full blur-[100px] animate-pulse-slow"></div>
         <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-purple-100/30 rounded-full blur-[100px] animate-pulse-slow delay-1000"></div>
         <div className="absolute top-[40%] left-[20%] w-[300px] h-[300px] bg-purple-50/30 rounded-full blur-[80px]"></div>

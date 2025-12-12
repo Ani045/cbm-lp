@@ -12,7 +12,7 @@ const FooterSection = () => {
                     {/* Logo */}
                     <div className="flex items-center gap-4">
                         <img
-                            src="https://res.cloudinary.com/damfndmrm/image/upload/v1765535319/CBM-4_eivme3.png"
+                            src="https://res.cloudinary.com/damfndmrm/image/upload/v1765543406/CBM-5_gjuxjw.png"
                             alt="CBM Medical Management"
                             className="h-12 w-auto"
                         />

@@ -45,10 +45,10 @@ const FAQSection = () => {
                     {/* FAQ List */}
                     <div className="lg:col-span-3">
                         <div className="mb-6">
-                            <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-2">
+                            <h2 className="text-2xl lg:text-3xl font-bold text-black mb-2">
                                 Frequently Asked <span className="text-[#6634A1]">Questions</span>
                             </h2>
-                            <p className="text-slate-600 text-sm">Everything you need to know about partnering with CBM</p>
+                            <p className="text-gray-700 text-sm">Everything you need to know about partnering with CBM</p>
                         </div>
 
                         <div className="space-y-3">
@@ -61,14 +61,14 @@ const FAQSection = () => {
                                         onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                         className="w-full px-5 py-4 text-left flex items-center justify-between hover:bg-purple-50 transition-colors"
                                     >
-                                        <span className="text-sm font-semibold text-slate-900 pr-4">{faq.question}</span>
+                                        <span className="text-sm font-semibold text-black pr-4">{faq.question}</span>
                                         <SafeIcon
                                             icon={FiChevronDown}
                                             className={`w-4 h-4 text-[#6634A1] transition-transform flex-shrink-0 ${openIndex === index ? 'rotate-180' : ''}`}
                                         />
                                     </button>
                                     {openIndex === index && (
-                                        <div className="px-5 pb-4 text-slate-600 text-sm leading-relaxed">
+                                        <div className="px-5 pb-4 text-gray-700 text-sm leading-relaxed">
                                             {faq.answer}
                                         </div>
                                     )}
