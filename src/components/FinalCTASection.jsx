@@ -35,7 +35,7 @@ const FinalCTASection = () => {
                             onClick={scrollToHeroForm}
                             className="bg-white text-[#6634A1] px-6 py-3 rounded-xl font-bold hover:bg-purple-100 transition-all shadow-lg flex items-center gap-2 whitespace-nowrap"
                         >
-                            Get Free Consultation
+                            Get  Consultation
                             <SafeIcon icon={FiArrowRight} className="w-4 h-4" />
                         </button>
                         <a

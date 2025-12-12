@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'}`}>
+            <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-4'}`}>
                 <div className="container max-w-7xl mx-auto px-6 flex justify-between items-center">
                     <div className="flex items-center gap-3">
                         <img
@@ -42,7 +42,7 @@ const Navbar = () => {
                             onClick={scrollToHeroForm}
                             className="bg-[#6634A1] text-white px-5 py-2.5 rounded-full hover:bg-purple-700 transition-all shadow-lg shadow-purple-900/20"
                         >
-                            Free Consultation
+                            Get Consultation
                         </button>
                     </div>
                 </div>

@@ -93,7 +93,7 @@ const AboutSection = () => {
                                 onClick={scrollToHeroForm}
                                 className="bg-[#6634A1] text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg shadow-purple-600/20"
                             >
-                                Get Free Consultation
+                                Get Consultation
                             </button>
                             <a href="tel:+12142955890" className="flex items-center gap-2 text-[#6634A1] font-bold text-lg hover:underline">
                                 <SafeIcon icon={FiPhone} className="w-5 h-5" />

@@ -7,7 +7,7 @@ const { FiTrendingUp, FiDollarSign, FiCheckCircle, FiClock, FiZap, FiShield, FiH
 const HeroSection = ({ isLoaded }) => {
 
     return (
-        <section className="relative pt-16 mt-8 sm:mt-6 pb-8 overflow-hidden">
+        <section className="relative pt-16 mt-6 sm:mt-6 pb-8 overflow-hidden">
             <div className="container max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Main Heading */}
@@ -94,7 +94,7 @@ const HeroSection = ({ isLoaded }) => {
                     <div className="lg:col-span-2">
                         <div className="bg-white/70 backdrop-blur-xl rounded-2xl border border-white/80 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] p-5">
                             <div className="text-center mb-4">
-                                <h3 className="text-lg font-bold text-slate-900 mb-1">Get Your FREE Assessment</h3>
+                                <h3 className="text-lg font-bold text-slate-900 mb-1">Get Your  Assessment</h3>
                                 <p className="text-sm text-slate-600">Discover your revenue potential</p>
                             </div>
 
@@ -118,14 +118,11 @@ const HeroSection = ({ isLoaded }) => {
                                     className="w-full px-3 py-2.5 border border-slate-200 rounded-lg focus:border-[#6634A1] focus:ring-2 focus:ring-purple-100 outline-none transition-all bg-white/80 text-sm"
                                     required
                                 />
-                                <select className="w-full px-3 py-2.5 border border-slate-200 rounded-lg focus:border-[#6634A1] focus:ring-2 focus:ring-purple-100 outline-none transition-all bg-white/80 text-sm">
-                                    <option value="">Practice Type</option>
-                                    <option value="psychiatry">Psychiatry</option>
-                                    <option value="tms">TMS Therapy</option>
-                                    <option value="psychology">Psychology</option>
-                                    <option value="mental-health">Mental Health</option>
-                                    <option value="other">Other</option>
-                                </select>
+                                <textarea
+                                    placeholder="Message (optional)"
+                                    rows="3"
+                                    className="w-full px-3 py-2.5 border border-slate-200 rounded-lg focus:border-[#6634A1] focus:ring-2 focus:ring-purple-100 outline-none transition-all bg-white/80 text-sm resize-none"
+                                ></textarea>
 
                                 <button
                                     type="submit"
@@ -136,7 +133,7 @@ const HeroSection = ({ isLoaded }) => {
 
                                 <div className="text-center text-xs text-slate-500 mt-2">
                                     <SafeIcon icon={FiZap} className="text-[#6634A1] w-3 h-3 inline mr-1" />
-                                    Free 15-min consultation
+                                    15-min consultation
                                 </div>
                             </form>
 

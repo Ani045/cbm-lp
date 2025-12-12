@@ -176,12 +176,12 @@ const StatsSection = () => {
                 </div>
 
                 {/* CTA */}
-                <div className="text-center mt-8">
+                {/* <div className="text-center mt-8">
                     <button className="bg-white text-[#6634A1] px-8 py-3 rounded-xl font-bold hover:bg-purple-100 transition-all shadow-lg inline-flex items-center gap-2">
                         Get Your Free Assessment
                         <SafeIcon icon={FiArrowRight} className="w-5 h-5" />
                     </button>
-                </div>
+                </div> */}
             </div>
         </section>
     );

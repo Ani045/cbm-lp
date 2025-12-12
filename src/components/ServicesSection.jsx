@@ -52,7 +52,7 @@ const ServicesSection = () => {
                     {services.map((s, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 hover:shadow-lg transition-all group shadow-sm"
+                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 "
                         >
                             {/* Image */}
                             <div className="overflow-hidden bg-white">

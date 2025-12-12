@@ -101,7 +101,7 @@ const FAQSection = () => {
                                     onClick={scrollToHeroForm}
                                     className="w-full bg-white text-[#6634A1] py-3 px-4 rounded-xl font-bold hover:bg-purple-100 transition-all"
                                 >
-                                    Get Free Consultation
+                                    Get  Consultation
                                 </button>
                             </div>
                         </div>
