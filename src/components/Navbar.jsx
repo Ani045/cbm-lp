@@ -49,7 +49,7 @@ const Navbar = () => {
             </nav>
 
             {/* Fixed Bottom Bar for Mobile */}
-            <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-[0_-4px_20px_-4px_rgba(0,0,0,0.1)] px-4 py-2">
+            <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 shadow-[0_-4px_20px_-4px_rgba(0,0,0,0.1)] px-4 py-2">
                 <div className="flex items-center gap-2">
                     <a
                         href="tel:+12142955890"

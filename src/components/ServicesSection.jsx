@@ -52,21 +52,21 @@ const ServicesSection = () => {
                     {services.map((s, i) => (
                         <div
                             key={i}
-                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 hover:shadow-lg transition-all group flex flex-row md:flex-col"
+                            className="bg-white rounded-xl overflow-hidden border border-slate-200 hover:border-[#6634A1]/40 hover:shadow-lg transition-all group shadow-sm"
                         >
                             {/* Image */}
-                            <div className="relative overflow-hidden w-28 md:w-full flex-shrink-0">
+                            <div className="overflow-hidden bg-white">
                                 <img
                                     src={s.image}
                                     alt={s.title}
-                                    className="w-full h-full object-cover md:object-contain transition-transform duration-500 group-hover:scale-110"
+                                    className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
 
                             {/* Content */}
-                            <div className="p-3 md:p-4 flex-1">
-                                <h3 className="text-sm md:text-base font-bold text-slate-900 mb-1 md:mb-2">{s.title}</h3>
-                                <p className="text-slate-600 text-xs leading-relaxed mb-2 md:mb-3 line-clamp-2 md:line-clamp-none">{s.desc}</p>
+                            <div className="p-4 bg-white">
+                                <h3 className="text-base font-bold text-black mb-2">{s.title}</h3>
+                                <p className="text-gray-700 text-sm leading-relaxed mb-3">{s.desc}</p>
 
                                 {/* Features */}
                                 <div className="flex flex-wrap gap-1">
